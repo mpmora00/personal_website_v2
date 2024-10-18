@@ -1,4 +1,3 @@
-// jobData.ts
 export interface JobDescription {
   position: string;
   location: string;
@@ -14,7 +13,7 @@ export interface JobsInformationType {
 export const JobsInformation: JobsInformationType = {
   0: [
     {
-      position: 'Backend Software Engineer I at',
+      position: 'Backend Software Engineer I at ',
       location: 'Iterative Scopes',
       url: 'https://iterative.health/',
       time: 'Jan 2023 - Mar 2024',
@@ -25,7 +24,7 @@ export const JobsInformation: JobsInformationType = {
       ]
     },
     {
-      position: 'Full Stack Software Engineer II at',
+      position: 'Full Stack Software Engineer II at ',
       location: 'Iterative Scopes',
       url: 'https://iterative.health/',
       time: 'Mar 2024 - Present',
@@ -36,7 +35,7 @@ export const JobsInformation: JobsInformationType = {
   ],
   1: [
     {
-      position: 'Software Engineer at',
+      position: 'Software Engineer at ',
       location: 'Meta',
       url: 'https://www.meta.com/',
       time: 'Sep 2022 - Nov 2022',
@@ -46,7 +45,7 @@ export const JobsInformation: JobsInformationType = {
       ]
     },
     {
-      position: 'Software Engineer Intern at',
+      position: 'Software Engineer Intern at ',
       location: 'Facebook',
       url: 'https://www.meta.com/',
       time: 'Jun 2021 - Sep 2021',
@@ -57,7 +56,7 @@ export const JobsInformation: JobsInformationType = {
   ],
   2: [
     {
-      position: 'UI/UX Designer at',
+      position: 'UI/UX Designer at ',
       location: 'DALI Lab',
       url: 'https://dali.dartmouth.edu/',
       time: 'Mar 2021 - Jun 2021',
@@ -68,7 +67,7 @@ export const JobsInformation: JobsInformationType = {
   ],
   3: [
     {
-      position: 'James O. Freedman Presidential Scholar Research Assistant at',
+      position: 'James O. Freedman Presidential Scholar Research Assistant at ',
       location: 'Dartmouth College',
       url: 'https://students.dartmouth.edu/ugar/research/programs/presidential-scholars/program-information',
       time: 'Sep 2020 - Jun 2021',
@@ -77,7 +76,7 @@ export const JobsInformation: JobsInformationType = {
       ]
     },
     {
-      position: 'Sophomore Scholars Research Assistant at',
+      position: 'Sophomore Scholars Research Assistant at ',
       location: 'Dartmouth College',
       url: 'https://students.dartmouth.edu/wisp/internships/sophomore-scholarships',
       time: 'Sep 2019 - Sep 2020',
@@ -88,7 +87,7 @@ export const JobsInformation: JobsInformationType = {
   ],
   4: [
     {
-      position: 'Co-Founder of',
+      position: 'Co-Founder of ',
       location: 'Compartamos la Mesa',
       url: 'https://www.facebook.com/CompartamoslaMesa/',
       time: 'Mar 2021 - Jun 2021',

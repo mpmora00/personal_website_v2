@@ -1,0 +1,19 @@
+.footer {
+    color: #808080;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: flex-end;
+
+    .footerText {
+        margin-right: 30px;
+        margin-top: 5px;
+    }
+
+    .footerIcons {
+        margin-right: 20px;
+
+        :hover {
+            color: white;
+        }
+    }
+}

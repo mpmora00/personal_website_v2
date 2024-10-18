@@ -1,0 +1,19 @@
+.jobTabs {
+    :global(.MuiTabs-indicator) {
+        left: 0;
+        background-color: #ff7878;
+        border-radius: 5px;
+    }
+
+    .jobTab {
+        &:global(.MuiTab-root) {
+            color: white;
+            font-weight: 100;
+            border-left: 2px solid #6E5959;
+        }
+
+        &:global(.Mui-selected) {
+            font-weight: 400;
+        }
+    }
+}

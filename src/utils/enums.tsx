@@ -3,5 +3,4 @@ export const enum PageTab {
   projects = 'PROJECTS',
   about = 'ABOUT',
   resume = 'RESUME',
-  error = 'ERROR',
 }

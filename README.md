@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Personal Website V2
+In early 2024, I was promoted at work and became a full-stack engineer, while I had worked with React before, I needed a refresher before diving head-first into the position. I decided to re-write my personal website as a means to self-review in React and Typescript.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## User Guide
+
+# Table of Contents
+- [Tools](#tools)
+- [Installation and Local Setup](#installation-and-local-setup)
+- [Available Scripts](#available-scripts)
+
+## Tools
+The following tools are utilized in this project:
+
+### ESLint
+Used for linting and code formatting.  VSCode can be set up to automatically lint on file save.
+
+### Husky
+This powers the pre-commit hook.
+
+
+## Installation and Local Setup
+
+Before running the application locally, ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (version 14.x or later recommended)
+- [Yarn](https://yarnpkg.com/) package manager
+
+To check if you have `yarn` installed, run:
+```bash
+yarn --version
+```
+
+If you do not have yarn installed, you can install it globally with:
+```bash 
+npm install -g yarn
+```
+
+Install dependencies:
+
+```bash
+yarn install
+```
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
 ### `yarn build`
+Builds the app for production to the `dist` folder. This command compiles TypeScript files, bundles the application, and optimizes it for deployment.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `yarn preview`
+Serves the built version of the app in a local environment, allowing you to test how it will function in production. Open [http://localhost:4173](http://localhost:4173/) in the browser to view it.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `yarn dev`
+Runs the app in development mode. Open [http://localhost:5173](http://localhost:5173/) to view it in the browser. 
+The page will automatically reload whenever you make changes to the source files. You may also see any lint errors in the console.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `yarn lint`
+Runs ESLint on the source code in the src directory and automatically fixes any linting errors that can be resolved. This helps maintain code quality and consistency throughout the project.
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### `yarn postinstall`
+Initializes Husky to manage Git hooks for the project. This can be useful for enforcing pre-commit checks, such as linting or running tests before pushing changes.

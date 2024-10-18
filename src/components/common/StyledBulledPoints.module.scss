@@ -1,0 +1,10 @@
+.listItems {
+    &:before {
+        color: #6E5959;
+        content: '▹';
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(30%);
+    }
+}

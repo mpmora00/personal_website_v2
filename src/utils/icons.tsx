@@ -5,11 +5,7 @@ import {
   Email as IconEmail,
 } from '@mui/icons-material';
 
-interface IconProps {
-  name: string;
-}
-
-const Icon = ({ name } : IconProps) => {
+export const Icon = ({ name }: { name: string }) => {
   switch (name) {
     case 'GitHub':
       return <IconGitHub />;
@@ -22,4 +18,3 @@ const Icon = ({ name } : IconProps) => {
   }
 };
 
-export default Icon;

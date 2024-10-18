@@ -1,0 +1,30 @@
+.projectCard {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 250px;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+
+        .title {
+            color: #ff7878;
+            transition: color 0.3s ease;
+        }
+    }
+}
+
+.cardActions {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+
+    .icons {
+        &:hover {
+            color: #ff7878;
+            transition: color 0.3s ease;
+        }
+    }
+}

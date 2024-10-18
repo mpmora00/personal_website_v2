@@ -1,0 +1,39 @@
+.headerContainer {
+    text-align: center;
+}
+
+.headerButton {
+    :global(.MuiButton-root) {
+        height: 50px;
+        margin: 0px 10px;
+        padding: 10px 20px;
+        font-family: 'Bebas Neue', Impact;
+        font-size: 25px;
+    
+        &:hover {
+            color: white;
+            background-color: #303030;
+        }
+
+        &.selectedTab {
+            color: white
+        }
+
+        &.projectsSelected {
+            background-color: #303030;
+        }
+    }
+}
+
+.menuItem {
+    :global(.MuiMenuItem-root) {
+        background-color: #303030;
+        justify-content: center;
+        font-family: 'Bebas Neue', Impact;
+        font-size: 25px;
+
+        &:hover {
+            background-color: #232323;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.artwork {
+    border-radius: 8px;
+}
+
+.dialogContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    align-items: center;
+    text-align: center;
+
+    .dialogImage {
+        width: 70%;
+        margin-bottom: 20px;
+        border: 2px solid black;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .dialogText {
+        width: 80%;
+        white-space: pre-wrap;
+    }
+
+    .closeIcon {
+        position: absolute;
+        right: 8px;
+        top: 8px;
+    }
+}
