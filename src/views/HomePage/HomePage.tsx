@@ -1,12 +1,12 @@
-import { Grid } from '@mui/material';
+import Grid from '@mui/material/Grid2';
 import { ImageLink } from './ImageLink';
-import { HomePageNavLinks } from './navLinks';
+import { NavLinks } from './NavLinks';
 
 export default function HomePage() {
   return (
     <Grid container spacing={2}>
-      {HomePageNavLinks.map(({ img, href, title, description }) => (
-        <Grid item xs={6} sm={6} md={6} key={title}>
+      {NavLinks.map(({ img, href, title, description }) => (
+        <Grid size={6} key={title}>
           <ImageLink
             key={title}
             href={href}

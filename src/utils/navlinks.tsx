@@ -4,7 +4,7 @@ import resumePDF from '../assets/Resume.pdf';
 
 import HomePage from '../views/HomePage/HomePage.tsx';
 import AboutPage from '../views/AboutPage/AboutPage.tsx';
-import DigitalDesignPage from '../views/Projects/DigitalDesign.tsx';
+import DigitalDesignPage from '../views/Projects/DigitalDesign/DigitalDesign.tsx';
 import CodeSamplesPage from '../views/Projects/CodeSamples/CodeSamples.tsx';
 import AnimationsPage from '../views/Projects/Animations/Animations.tsx';
 import ArtworksPage from '../views/Projects/Artworks/Artwork.tsx';

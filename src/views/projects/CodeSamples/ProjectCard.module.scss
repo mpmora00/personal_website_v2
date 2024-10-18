@@ -21,10 +21,8 @@
     right: 0;
     padding: 10px;
 
-    .icons {
-        &:hover {
-            color: #ff7878;
-            transition: color 0.3s ease;
-        }
+    .icons:hover {
+        color: #ff7878;
+        transition: color 0.3s ease;
     }
 }

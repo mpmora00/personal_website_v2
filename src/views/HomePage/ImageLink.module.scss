@@ -15,9 +15,7 @@
         width: 80%;
         top: 50%;
         left: 50%;
-        // Offset the text by its own width/height
         transform: translate(-50%, -50%);
-        text-align: center;
 
         &.hovered {
             visibility: visible;

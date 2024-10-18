@@ -4,7 +4,7 @@ import artwork from '../../assets/images/Artwork/artwork.png';
 import animations from '../../assets/images/animations.png';
 import codeSamples from '../../assets/images/codeSamples.png';
 
-export const HomePageNavLinks: {
+export const NavLinks: {
     img: string; href: string, title: string, description: string
 }[] = [
     {
