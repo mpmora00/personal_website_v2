@@ -1,11 +1,14 @@
 # Personal Website V2
 In early 2024, I was promoted at work and became a full-stack engineer, while I had worked with React before, I needed a refresher before diving head-first into the position. I decided to re-write my personal website as a means to self-review in React and Typescript.
 
+Link: [mariamora.me](mariamora.me)
+
 ## User Guide
 
 # Table of Contents
 - [Tools](#tools)
 - [Installation and Local Setup](#installation-and-local-setup)
+- [Deploying to website](#deploying-to-website)
 - [Available Scripts](#available-scripts)
 
 ## Tools
@@ -39,6 +42,13 @@ Install dependencies:
 ```bash
 yarn install
 ```
+
+## Deploying to website
+1. Build The Project: Open the terminal and run `yarn build` to create a production build of the site. This will generate a dist folder containing the production-ready files.
+2. Switch to the `gh-pages` branch and clear it before committing the new build files by running `git rm -rf .`
+3. Copy Build Files: Now, copy the contents of the dist folder into the gh-pages branch and push.
+4. Configure GitHub Pages Settings: In the Settings tab, click on Pages. Make sure the source is set to the gh-pages branch.
+5. Check Deployment: After configuring GitHub Pages, wait a few minutes and then visit the provided URL to see your deployed site.
 
 ## Available Scripts
 
