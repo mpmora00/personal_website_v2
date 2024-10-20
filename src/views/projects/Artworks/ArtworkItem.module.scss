@@ -1,0 +1,48 @@
+.dialog {
+    border-radius: 8px;
+}
+
+.imageContainer{
+    .image {
+        width: 100%;
+        cursor: pointer;
+        border-radius: 8px;
+    }
+}
+
+.dialogContainer {
+    .dialogImage {
+        max-height: 80vh;
+        max-width: 60vw;
+        display: block;
+    }
+
+    .imageDescription {
+        white-space: pre-wrap;
+        position: absolute;
+        width: 100%;
+        padding: 20px;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: var(--primary-contrast-text);
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    &:hover .imageDescription {
+        opacity: 1;  // Show the description on hover
+    }
+
+    .title {
+        font-family: var(--font-family-title);
+        letter-spacing: 1px;
+        font-size: 1.5rem;
+    }
+
+    .closeIcon {
+        color: var(--primary-contrast-text);
+        position: absolute;
+        right: 8px;
+        top: 8px;
+    }
+}

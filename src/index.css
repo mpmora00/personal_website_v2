@@ -1,12 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+:root {
+    --background-default: #101010;
+    --background-light: #303030;
+    --background-dark: #232323;
+    --primary-main: #808080;
+    --primary-light: #b5b5b5;
+    --primary-contrast-text: #FFFFFF;
+    --secondary-main: #ff7878;
+    --secondary-dark: #6E5959;
+
+    --font-family-title: 'Bebas Neue', Impact;
+}
+
 #root {
+    background-color: var(--background-default);
+    color: var(--primary-contrast-text);
     display: flex;
     flex-direction: column;
     align-items: center;
-    line-height: 1;
-    color: white;
+}
+
+html {
+    background-color: var(--background-default);
 }
 
 .pageContainer {

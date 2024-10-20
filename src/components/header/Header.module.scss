@@ -1,5 +1,11 @@
 .headerContainer {
     text-align: center;
+
+    .header {
+        font-family: var(--font-family-title);
+        margin-top: 20px;
+        font-size: 3.75rem;
+    }
 }
 
 .headerButton {
@@ -7,33 +13,35 @@
         height: 50px;
         margin: 0px 10px;
         padding: 10px 20px;
-        font-family: 'Bebas Neue', Impact;
+        font-family: var(--font-family-title);
         font-size: 25px;
+        color: var(--primary-main);
     
         &:hover {
-            color: white;
-            background-color: #303030;
+            color: var(--primary-contrast-text);
+            background-color: var(--background-light);
         }
 
         &.selectedTab {
-            color: white
+            color: var(--primary-contrast-text)
         }
 
         &.projectsSelected {
-            background-color: #303030;
+            background-color: var(--background-light);
+            color: var(--primary-contrast-text)
         }
     }
 }
 
 .menuItem {
     :global(.MuiMenuItem-root) {
-        background-color: #303030;
+        background-color: var(--background-light);
         justify-content: center;
-        font-family: 'Bebas Neue', Impact;
+        font-family: var(--font-family-title);
         font-size: 25px;
 
         &:hover {
-            background-color: #232323;
+            background-color: var(--background-dark);
         }
     }
 }

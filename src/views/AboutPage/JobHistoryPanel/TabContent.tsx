@@ -1,29 +1,20 @@
 import { Box } from '@mui/material';
-import { JobDescription } from '../../../utils/jobs.ts';
-import Typography from '@mui/material/Typography';
-import StyledBulletPoints from '../../../components/common/StyledBulletPoints.tsx';
-import StyledLink from '../../../components/common/StyledLink.tsx';
+import StyledBulletPoints from '@/components/common/StyledBulletPoints.tsx';
+import StyledLink from '@/components/common/StyledLink.tsx';
 import styles from './TabContent.module.scss';
+import { JobsInformation, JobDescription } from '@/utils/JobsList.ts';
 
 
-interface TabContentProps {
-    index: number;
-    value: number;
-    jobs: JobDescription[];
-}
-
-export function TabContent({ index, value, jobs }: TabContentProps) {
+export function TabContent({ value }: { value: number }) {
     return (
-        <Box hidden={value !== index} className={styles.panelContainer}>
-            {jobs.map((job: JobDescription, index: number) => (
-                <Box key={index} className={index != 0 && styles.jobPositionTitle}>
-                    <Typography variant="h6">
+        <Box className={styles.panelContainer}>
+            {JobsInformation[value].map((job: JobDescription, index: number) => (
+                <Box key={index} className={index != 0 && styles.firstDescription}>
+                    <Box className={styles.jobPosition}>
                         {job.position}
                         <StyledLink href={job.url} text={job.location}/>
-                    </Typography>
-                    <Typography variant="body2">
-                        {job.time}
-                    </Typography>
+                    </Box>
+                    <Box className={styles.jobTime}>{job.time}</Box>
                     <StyledBulletPoints items={job.description.map((desc: string) => desc)} />
                 </Box>
             ))}

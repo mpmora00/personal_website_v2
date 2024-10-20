@@ -1,19 +1,9 @@
-import artwork1 from '../../../assets/images/Artwork/artwork.png';
-import artwork2 from '../../../assets/images/Artwork/artwork2.png';
-import artwork3 from '../../../assets/images/Artwork/artwork3.png';
-import artwork4 from '../../../assets/images/Artwork/artwork4.png';
-import artwork5 from '../../../assets/images/Artwork/artwork5.png';
-import artwork6 from '../../../assets/images/Artwork/artwork6.png';
-import artwork7 from '../../../assets/images/Artwork/artwork7.png';
-import artwork8 from '../../../assets/images/Artwork/artwork8.png';
-import artwork9 from '../../../assets/images/Artwork/artwork9.png';
-import artwork10 from '../../../assets/images/Artwork/artwork10.png';
-import artwork11 from '../../../assets/images/Artwork/artwork11.png';
-import artwork12 from '../../../assets/images/Artwork/artwork12.png';
-import artwork13 from '../../../assets/images/Artwork/artwork13.png';
-import artwork14 from '../../../assets/images/Artwork/artwork14.jpg';
+import {
+    artwork1, artwork2, artwork3, artwork4, artwork5, artwork6, artwork7, 
+    artwork8, artwork9, artwork10, artwork11, artwork12, artwork13, artwork14
+} from '../assets/images/Artwork';
 
-type Artwork = {
+export type Artwork = {
     src: string;
     title: string;
     description: string;

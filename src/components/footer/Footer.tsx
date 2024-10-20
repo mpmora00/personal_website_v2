@@ -1,18 +1,34 @@
-import { Box, IconButton, Typography } from '@mui/material';
-import { SocialMedia } from '../../utils/socialmedia.ts';
-import { Icon } from '../../utils/icons.tsx'
+import { Box, IconButton } from '@mui/material';
+import { GitHub, LinkedIn, Facebook, Email } from '@mui/icons-material';
 import styles from './Footer.module.scss';
+
+const SocialMedia = [
+  {
+    icon: <GitHub />,
+    url: 'https://github.com/mpmora00',
+  },
+  {
+    icon: <Facebook />,
+    url: 'https://www.facebook.com/mpmora00',
+  },
+  {
+    icon: <LinkedIn />,
+    url: 'https://www.linkedin.com/in/maria-paula-mora00/',
+  },
+  {
+    icon: <Email />,
+    url: 'mailto:mpmora00@gmail.com',
+  },
+];
 
 export default function Footer() {
   return (
     <Box className={styles.footer}>
-      <Typography variant="h5" className={styles.footerText}>
-        Contact Me:
-      </Typography>
+      <Box className={styles.footerText}>Contact Me:</Box>
 
-      {SocialMedia && SocialMedia.map(({ url, name }) => (
+      {SocialMedia.map(({ url, icon }) => (
         <IconButton key={url} href={url} color="inherit" className={styles.footerIcons}>
-          <Icon name={name}/>
+          {icon}
         </IconButton>
       ))}
   </Box>

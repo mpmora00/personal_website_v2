@@ -1,8 +1,9 @@
 import { useState, useCallback } from 'react';
 import classNames from 'classnames';
-import { Box, Typography } from '@mui/material';
+import { Box } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import styles from './ImageLink.module.scss';
+import StyledTitle from '@/components/common/StyledTitle';
 
 interface ImageLinkProps {
     href: string;
@@ -33,12 +34,8 @@ export function ImageLink({ href, src, title, description }: ImageLinkProps) {
                 loading="lazy"
             />
             <Box className={classNames(styles.imageText, { [styles.hovered]: hovered })}>
-                <Typography variant="h5" color="primary.contrastText">
-                    {title}
-                </Typography>
-                <Typography variant="body1" color="primary.main">
-                    {description}
-                </Typography>
+                <StyledTitle text={title}/>
+                <Box className={styles.imageDescription}>{description}</Box>
             </Box>
         </Box>
     );

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import { JobsInformation } from '../../../utils/jobs.ts';
+import { JobsInformation } from '@/utils/JobsList.ts';
 import styles from './JobTabs.module.scss';
 
 

@@ -3,6 +3,7 @@
 
     .image {
         width: 100%;
+        border-radius: 5px;
 
         &.hovered {
             opacity: 20%;
@@ -20,5 +21,9 @@
         &.hovered {
             visibility: visible;
         }
+    }
+
+    .imageDescription {
+        color: var(--primary-light)
     }
 }

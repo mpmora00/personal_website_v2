@@ -1,18 +1,12 @@
-import animations1 from '../../../assets/videos/snow.mp4';
-import animations2 from '../../../assets/videos/walkFront.mp4';
-import animations3 from '../../../assets/videos/runFront.mp4';
-import animations4 from '../../../assets/videos/jump.mp4';
-import animations5 from '../../../assets/videos/character.mp4';
-import animations6 from '../../../assets/videos/runSide.mp4';
-import animations7 from '../../../assets/videos/walkSide.mp4';
-import animations8 from '../../../assets/videos/ball.mp4';
+import {
+    animations1, animations2, animations3, animations4, 
+    animations5, animations6, animations7, animations8
+} from '../assets/videos';
 
-type Animation = {
+export const AnimationsList: {
     video: string;
     description: string;
-};
-
-export const AnimationsList: Animation[] = [
+}[] = [
     {
         video: animations1,
         description: "'Slipping through campus': The final animation project created for famous animator's Patricia Hannaway course in winter 2020. The scene is set in front of Baker-Berry Library, Dartmouth College, Hanover, NH, USA.",

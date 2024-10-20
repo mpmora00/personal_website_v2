@@ -1,18 +1,17 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import Grid from '@mui/material/Grid2';
 import styles from './Animations.module.scss';
 import ReactPlayer from 'react-player';
-import { AnimationsList } from './AnimationsList';
+import { AnimationsList } from '@/utils/AnimationsList';
+import StyledTitle from "@/components/common/StyledTitle";
 
 export default function AnimationsPage() {
   return (
     <Box className={styles.animationsContainer}>
-      <Typography variant="h5" >
-        {"Animations"}
-      </Typography>
-      <Typography variant="body1" className={styles.descriptionText}>
+      <StyledTitle text={"Animations"}/>
+      <Box className={styles.descriptionText}>
         {"Various animations, characters, and settings created over the years for various purposes mostly utilizing Autodesk Maya 2018."}
-      </Typography>
+      </Box>
 
       <Grid container spacing={5}>
         {AnimationsList.map((animations) => (
@@ -30,9 +29,7 @@ export default function AnimationsPage() {
                 },
               }}
             />
-            <Typography variant="body1" className={styles.descriptionText}>
-              {animations.description}
-            </Typography>
+            <Box className={styles.descriptionText}>{animations.description}</Box>
           </Grid>
         ))}
       </Grid>

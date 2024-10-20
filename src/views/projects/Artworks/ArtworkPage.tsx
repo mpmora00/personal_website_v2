@@ -1,21 +1,22 @@
-import { Box, ImageList, Typography } from "@mui/material";
-import { ArtworkList } from "./ArtworkList";
-import ImageModal from './ImageDetails.tsx';
-import styles from './Artwork.module.scss';
+import { Box, ImageList, ImageListItem } from "@mui/material";
+import { ArtworkList } from "@/utils/ArtworkList.ts";
+import styles from './ArtworkPage.module.scss';
+import DetailsContainer from "./ArtworkItem.tsx";
+import StyledTitle from "@/components/common/StyledTitle.tsx";
 
 export default function ArtworkPage() {
   return (
     <Box className={styles.artworksContainer}>
-      <Typography variant="h5" >
-        {"Artworks"}
-      </Typography>
-      <Typography variant="body1" className={styles.descriptionText}>
+      <StyledTitle text={"Artworks"} />
+      <Box className={styles.descriptionText}>
         {"A series of various original artworks including paintings, sculptures, and drawings, created over the years. I've received drawing and paintings lessons since the age of 3 allowing me to have a large artwork collection. I've only shown the ones I'm most proud but, fortunately, there are more to see."}
-      </Typography>
+      </Box>
   
       <ImageList variant="masonry" cols={3} gap={20}>
         {ArtworkList.map((item) => (
-          <ImageModal img={item.src} title={item.title} key={item.title} description={item.description} />
+          <ImageListItem key={item.src}>
+            <DetailsContainer title={item.title} description={item.description} artwork={item}/>
+          </ImageListItem>
         ))}
       </ImageList>
     </Box>

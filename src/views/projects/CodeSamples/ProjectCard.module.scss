@@ -1,28 +1,47 @@
 .projectCard {
     display: flex;
-    position: relative;
     flex-direction: column;
-    height: 250px;
+    min-height: 250px;
+    height: 100%;
     transition: transform 0.3s ease;
+
+    &:global(.MuiCard-root) {
+        background-color: var(--background-light)
+    }
 
     &:hover {
         transform: translateY(-5px);
 
         .title {
-            color: #ff7878;
+            color: var(--secondary-main);
             transition: color 0.3s ease;
         }
     }
 }
 
+.cardContent {
+    color: var(--primary-contrast-text);
+    margin: 10px;
+    margin-bottom: 0px;
+
+    .codingLanguages {
+        margin-top: 30px;
+        white-space: pre-wrap;
+        font-weight: 100,
+    }
+}
+
 .cardActions {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 10px;
+    margin: 10px;
+    margin-top: auto;
+    justify-content: flex-end;
+
+    .icons {
+        color: var(--primary-contrast-text);
+    }
 
     .icons:hover {
-        color: #ff7878;
+        color: var(--secondary-main);
         transition: color 0.3s ease;
     }
 }

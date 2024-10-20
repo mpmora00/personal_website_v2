@@ -1,19 +1,18 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import Grid from '@mui/material/Grid2';
 import styles from './DigitalDesign.module.scss';
-import StyledBulletPoints from "../../../components/common/StyledBulletPoints";
-import { DigitalProjectList } from './DigitalDesignProjects';
+import StyledBulletPoints from "@/components/common/StyledBulletPoints";
+import { DigitalProjectList } from '@/utils/DigitalDesignProjects';
 import ReactPlayer from 'react-player';
+import StyledTitle from "@/components/common/StyledTitle";
 
 export default function DigitalDesignPage() {
   return (
     <Box className={styles.digitalDesignContainer}>
       {DigitalProjectList.map((project) => (
         <Box key={project.title} className={styles.projectContainer}>
-          <Typography variant="h5">{project.title}</Typography>
-          <Typography variant="body1" className={styles.descriptionText}>
-            {project.description}
-          </Typography>
+          <StyledTitle text={project.title} />
+          <Box className={styles.descriptionText}>{project.description}</Box>
           <StyledBulletPoints items={project.details} className={styles.descriptionBullet} />
 
           <Grid container spacing={2}>

@@ -1,6 +1,6 @@
 .listItems {
     &:before {
-        color: #6E5959;
+        color: var(--secondary-dark);
         content: '▹';
         position: absolute;
         top: 0;

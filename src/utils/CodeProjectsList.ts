@@ -8,19 +8,31 @@ export type Project = {
 
 export const CodeProjectsList: Project[] = [
     {
-        title: "Personal Website V2",
-        language: "React, TypeScript",
-        shortDescription: "An upgrade to my personal website built with React and TypeScript to showcase my projects and skills.",
-        longDescription: "In early 2024, I was promoted at work to a full-stack engineer role, necessitating a solid understanding of React and TypeScript. Although I had previous experience with React, I wanted to refresh my knowledge and deepen my understanding of TypeScript. To achieve this, I decided to rewrite my personal website as a practical self-review exercise. This project allowed me to apply the concepts of React and TypeScript in a real-world context, resulting in an enhanced user experience and a modernized design. The website serves as a portfolio to showcase my projects, skills, and professional growth while reinforcing my proficiency in these technologies.",
-        link: "https://github.com/mpmora00/personal_website_v1",
-    },
-    {
         title: "Personal Website V1",
-        language: "HTML, Javascript",
+        language: "HTML, Javascript, CSS",
         shortDescription: "I taught myself HTML, JavaScript, and CSS to build this personal website showcasing my projects and skills.",
         longDescription: "I taught myself HTML, JavaScript, and CSS through a combination of online courses, tutorials, and hands-on projects. I solidified my understanding by building this personal website which allowed me to apply my knowledge in a real-world scenario and develop a stronger foundation in web development.",
         link: "https://github.com/mpmora00/personal_website_v1",
     }, 
+    {
+        title: "Annotations Platform",
+        language: "Frontend - React, TypeScript, CSS\nBackend - SQL, Python, FastAPI",
+        shortDescription: "Building an in-house platform with two main functions: labeling colonoscopy videos and automating the collection and analysis of patient records.",
+        longDescription: "We're focusing on automating the process of gathering and analyzing patient records to speed up the creation of Clinical Study Reports. When recruiting patients for clinical trials, research sites need to check multiple sources of information to see if patients qualify for specific trials. Most of this information is in the Electronic Health Record, which includes details like the patient's medical record number. By enhancing our current tools and analyzing EHR data, we aim to identify patients who are more likely to qualify for trials, which will help increase the number of participants.",
+    },
+    {
+        title: "Content Platform",
+        language: "Backend - Python, SQL, Terraform, Hasura",
+        shortDescription: "Helped design and implement databases for the secure storage of both PHI (Protected Health Information) and non-PHI data.",
+        longDescription: "Helped design and implement databases for the secure storage of both PHI (Protected Health Information) and non-PHI data, prioritizing compliance with HIPAA. Deployed AWS services like Lambdas and Step Functions using Terraform to upgrade the video ingestion pipeline which achieved a 90% reduction in missed videos and increased the identification rate of corrupted videos by 30%, while ensuring complete failure recovery without manual intervention.",
+    },
+    {
+        title: "Personal Website V2",
+        language: "React, TypeScript, CSS",
+        shortDescription: "An upgrade to my personal website built with React and TypeScript to showcase my projects and skills.",
+        longDescription: "In early 2024, I was promoted at work to a full-stack engineer role, necessitating a solid understanding of React and TypeScript. Although I had previous experience with React, I wanted to refresh my knowledge and deepen my understanding of TypeScript. To achieve this, I decided to rewrite my personal website as a practical self-review exercise. This project allowed me to apply the concepts of React and TypeScript in a real-world context, resulting in an enhanced user experience and a modernized design. The website serves as a portfolio to showcase my projects, skills, and professional growth while reinforcing my proficiency in these technologies.",
+        link: "https://github.com/mpmora00/personal_website_v2",
+    },
     {
         title: "Tiny Search Engine",
         language: "C",

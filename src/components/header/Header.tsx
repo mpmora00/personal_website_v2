@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { Box, Button, styled, MenuItem, Tooltip, Typography } from '@mui/material';
+import { Box, Button, styled, MenuItem, Tooltip } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import { TooltipProps, tooltipClasses } from '@mui/material/Tooltip';
-import { PageTab } from '../../utils/enums.tsx'
+import { PageTab } from '@/utils/Routing.tsx'
 import styles from './Header.module.scss';
 import classNames from 'classnames';
 
@@ -42,7 +42,7 @@ export default function Header({ page } : { page: PageTab }) {
 
   return (
     <Box className={styles.headerContainer}>
-      <Typography variant="h2">Maria Mora</Typography>
+      <Box className={styles.header}>Maria Mora</Box>
       <Box className={styles.headerButton}>
         <Button 
           className={getClassName(page, PageTab.home)}

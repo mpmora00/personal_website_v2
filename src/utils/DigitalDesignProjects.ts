@@ -1,17 +1,8 @@
-import digitalArt1 from '../../../assets/images/DigitalArts/digitalArt.png';
-import digitalArt2 from '../../../assets/images/DigitalArts/digitalArt2.png';
-import digitalArt3 from '../../../assets/images/DigitalArts/digitalArt3.png';
-import digitalArt4 from '../../../assets/images/DigitalArts/digitalArt4.png';
-import arvr1 from '../../../assets/videos/Murder2.mp4';
-import arvr2 from '../../../assets/videos/Candy2.mp4';
-import arvr3 from '../../../assets/videos/Turtle2.mp4';
-import arvr4 from '../../../assets/videos/Shark2.mp4';
-import figma1 from '../../../assets/images/DigitalArts/figma1.png';
-import figma2 from '../../../assets/images/DigitalArts/figma2.png';
-import figma3 from '../../../assets/images/DigitalArts/figma3.jpg';
-import figma4 from '../../../assets/images/DigitalArts/figma4.jpg';
-import figma5 from '../../../assets/images/DigitalArts/figma5.png';
-
+import {
+    digitalArt1, digitalArt2, digitalArt3, digitalArt4,
+    figma1, figma2, figma3, figma4, figma5,
+} from '../assets/images/DigitalArts';
+import { arvr1, arvr2, arvr3, arvr4 } from '../assets/videos';
 
 type Project = {
     title: string;

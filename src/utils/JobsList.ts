@@ -1,16 +1,14 @@
-export interface JobDescription {
+export type JobDescription = {
   position: string;
   location: string;
   url: string;
   time: string;
   description: string[];
-}
+};
 
-export interface JobsInformationType {
-  [key: number]: JobDescription[];
-}
-
-export const JobsInformation: JobsInformationType = {
+export const JobsInformation: { 
+  [key: number]: JobDescription[]
+} = {
   0: [
     {
       position: 'Backend Software Engineer I at ',

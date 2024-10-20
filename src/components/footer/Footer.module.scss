@@ -1,5 +1,5 @@
 .footer {
-    color: #808080;
+    color: var(--primary-main);
     margin: 20px 0px;
     display: flex;
     justify-content: flex-end;
@@ -7,13 +7,16 @@
     .footerText {
         margin-right: 30px;
         margin-top: 5px;
+        font-family: var(--font-family-title);
+        letter-spacing: 1;
+        font-size: 1.5rem;
     }
 
     .footerIcons {
         margin-right: 20px;
 
         :hover {
-            color: white;
+            color: var(--primary-contrast-text);
         }
     }
 }
