@@ -42,9 +42,7 @@
     "preview": "vite preview",
     "postinstall": "husky init",
     "prepare": "husky",
-    "test": "echo 'No tests defined'",
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build"
+    "test": "echo 'No tests defined'"
   },
   "browserslist": {
     "production": [
