@@ -10,7 +10,7 @@ import './index.css';
 interface RoutesProps {
   path: string,
   page: PageTab;
-  element: JSX.Element;
+  element: React.ReactNode;
 }
 
 const routes = NavLinks.map(({ path, page, element }: RoutesProps) => (
