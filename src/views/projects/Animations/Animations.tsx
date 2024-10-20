@@ -2,7 +2,7 @@ import { Box } from "@mui/material";
 import Grid from '@mui/material/Grid2';
 import styles from './Animations.module.scss';
 import ReactPlayer from 'react-player';
-import { AnimationsList } from '@/utils/AnimationsList';
+import { AnimationsList } from '@/information/AnimationsList';
 import StyledTitle from "@/components/common/StyledTitle";
 
 export default function AnimationsPage() {
@@ -15,7 +15,7 @@ export default function AnimationsPage() {
 
       <Grid container spacing={5}>
         {AnimationsList.map((animations) => (
-          <Grid size={6} key={animations.video}>
+          <Grid size={{ xs: 12, sm: 12, md: 6, lg: 6 }} key={animations.video}>
             <ReactPlayer
               url={animations.video}
               width="100%"

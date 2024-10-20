@@ -1,7 +1,7 @@
 import { CardActions, Card, Box, CardContent, IconButton, Tooltip } from '@mui/material';
 import { Launch, MoreHoriz, Email } from '@mui/icons-material';
 import styles from './ProjectCard.module.scss';
-import { Project } from '@/utils/CodeProjectsList';
+import { Project } from '@/information/CodeProjectsList';
 import StyledTitle from '@/components/common/StyledTitle';
 
 export default function ProjectCard({ project, handleOpen }: {

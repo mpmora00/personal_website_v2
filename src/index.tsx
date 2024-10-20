@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { CssBaseline, Box } from '@mui/material';
 import Header from './components/header/Header.tsx'
 import Footer from './components/footer/Footer.tsx'
-import { NavLinks, PageTab } from './utils/Routing.tsx'
+import { NavLinks, PageTab } from './information/Routing.tsx'
 import './index.css';
 
 interface RoutesProps {

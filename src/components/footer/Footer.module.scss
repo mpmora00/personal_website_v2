@@ -2,19 +2,23 @@
     color: var(--primary-main);
     margin: 20px 0px;
     display: flex;
-    justify-content: flex-end;
+    column-gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
 
     .footerText {
-        margin-right: 30px;
         margin-top: 5px;
         font-family: var(--font-family-title);
         letter-spacing: 1;
         font-size: 1.5rem;
     }
 
-    .footerIcons {
-        margin-right: 20px;
+    .icons {
+        display: flex;
+        column-gap: 20px;
+    }
 
+    .footerIcons {
         :hover {
             color: var(--primary-contrast-text);
         }

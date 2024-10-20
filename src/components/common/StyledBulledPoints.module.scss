@@ -1,4 +1,7 @@
 .listItems {
+    overflow-wrap: break-word;
+    word-break: break-all;
+
     &:before {
         color: var(--secondary-dark);
         content: '▹';

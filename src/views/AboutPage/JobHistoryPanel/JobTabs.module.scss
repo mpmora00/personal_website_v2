@@ -1,4 +1,6 @@
 .jobTabs {
+    margin-bottom: 30px;
+
     :global(.MuiTabs-indicator) {
         left: 0;
         background-color: var(--secondary-main);
@@ -9,6 +11,8 @@
             color: var(--primary-contrast-text);
             font-weight: 100;
             border-left: 2px solid var(--secondary-dark);
+            flex: 1;
+            min-width: 130px;
         }
 
         &:global(.Mui-selected) {

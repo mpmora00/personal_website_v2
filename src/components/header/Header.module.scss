@@ -8,8 +8,14 @@
     }
 }
 
-.headerButton {
+.headerButtons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
     :global(.MuiButton-root) {
+        flex: 0 1 20%;
         height: 50px;
         margin: 0px 10px;
         padding: 10px 20px;
@@ -29,6 +35,10 @@
         &.projectsSelected {
             background-color: var(--background-light);
             color: var(--primary-contrast-text)
+        }
+
+        @media (max-width: 400px) {
+            flex: 0 1 40%;
         }
     }
 }

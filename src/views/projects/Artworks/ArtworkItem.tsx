@@ -1,7 +1,7 @@
 import { useCallback, useState } from 'react';
 import { Box, Dialog, IconButton } from '@mui/material';
 import { Close } from '@mui/icons-material';
-import { Artwork } from '@/utils/ArtworkList';
+import { Artwork } from '@/information/ArtworkList';
 import StyledTitle from '@/components/common/StyledTitle';
 import styles from './ArtworkItem.module.scss';
 

@@ -2,7 +2,7 @@ import { Box } from "@mui/material";
 import Grid from '@mui/material/Grid2';
 import styles from './DigitalDesign.module.scss';
 import StyledBulletPoints from "@/components/common/StyledBulletPoints";
-import { DigitalProjectList } from '@/utils/DigitalDesignProjects';
+import { DigitalProjectList } from '@/information/DigitalDesignProjects';
 import ReactPlayer from 'react-player';
 import StyledTitle from "@/components/common/StyledTitle";
 
@@ -17,7 +17,10 @@ export default function DigitalDesignPage() {
 
           <Grid container spacing={2}>
             {project.src.map((src) => (
-              <Grid size={project.gridSize} key={src}>
+              <Grid
+                size={{ xs: project.smallGridSize, sm: project.gridSize, md: project.gridSize, lg: project.gridSize }}
+                key={src}
+              >
                 {project.areVideos 
                   ? <ReactPlayer
                     url={src}

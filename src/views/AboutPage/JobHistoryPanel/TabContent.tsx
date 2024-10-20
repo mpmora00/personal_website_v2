@@ -2,7 +2,7 @@ import { Box } from '@mui/material';
 import StyledBulletPoints from '@/components/common/StyledBulletPoints.tsx';
 import StyledLink from '@/components/common/StyledLink.tsx';
 import styles from './TabContent.module.scss';
-import { JobsInformation, JobDescription } from '@/utils/JobsList.ts';
+import { JobsInformation, JobDescription } from '@/information/JobsList.ts';
 
 
 export function TabContent({ value }: { value: number }) {

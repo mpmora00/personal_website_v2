@@ -16,6 +16,12 @@
 
     .jobHistoryPanel {
         margin-top: 30px;
-        display: flex;
+        display: block;
+    }
+
+    @media (min-width: 600px) {
+        .jobHistoryPanel {
+            display: flex;
+        }
     }
 }

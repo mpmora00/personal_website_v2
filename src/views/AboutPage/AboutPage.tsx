@@ -1,4 +1,5 @@
 import { Box } from '@mui/material';
+import Grid from '@mui/material/Grid2';
 import { JobHistoryPanel } from './JobHistoryPanel.tsx';
 import StyledBulletPoints from '@/components/common/StyledBulletPoints.tsx';
 import profileImage from '@/assets/images/me.png';
@@ -12,33 +13,33 @@ const codingLanguages = ['Java', 'Python', 'JavaScript', 'HTLM', 'SQL', 'React',
 
 export default function AboutPage() {
   return (
-    <Box>
-      <StyledTitle text={"A little bit about me"}/>
-      <Box className={styles.descriptionContainer}>
-        <Box className={styles.descriptionText}>
-          <Box>{introductionText}</Box>
-          <Box>
-              {"Fast-forward to today, and I’ve had the privilege of working at "}
-              <StyledLink href="https://iterative.health/" text="a startup"/>
-              {', '}
-              <StyledLink href="https://www.meta.com/" text="a huge corporation"/>
-              {', and '}
-              <StyledLink href="https://dali.dartmouth.edu/" text="a student-led design studio"/>.
-          </Box>
-          <Box>{introductionText2}</Box>
-          <Box>{"Here are a few technologies I’ve been working with recently:"}</Box>
-          <StyledBulletPoints items={codingLanguages} className={styles.codingLanguages} />
-        </Box>
-        <Box className={styles.imageWrapper}>
-          <img
-            className={styles.headshot}
-            src={profileImage}
-            alt="Headshot"
-            loading="lazy"
-          />
-        </Box>
-      </Box>
-      <JobHistoryPanel />
-    </Box>
+    <>
+        <StyledTitle text={"A little bit about me"} classname={styles.title} />
+        <Grid container spacing={2}>
+          <Grid size={{ xs: 12, sm: 12, md: 7, lg: 8 }} key={"Text"} className={styles.descriptionText}>
+            <Box>{introductionText}</Box>
+            <Box>
+                {"Fast-forward to today, and I’ve had the privilege of working at "}
+                <StyledLink href="https://iterative.health/" text="a startup"/>
+                {', '}
+                <StyledLink href="https://www.meta.com/" text="a huge corporation"/>
+                {', and '}
+                <StyledLink href="https://dali.dartmouth.edu/" text="a student-led design studio"/>.
+            </Box>
+            <Box>{introductionText2}</Box>
+            <Box>{"Here are a few technologies I’ve been working with recently:"}</Box>
+            <StyledBulletPoints items={codingLanguages} className={styles.codingLanguages} />
+          </Grid>
+          <Grid size={{ xs: 6, sm: 6, md: 4, lg: 3 }} key={"Image"} className={styles.imageWrapper}>
+            <img
+              className={styles.headshot}
+              src={profileImage}
+              alt="Headshot"
+              loading="lazy"
+            />
+          </Grid>
+        <JobHistoryPanel />
+      </Grid>
+    </>
   );
 }

@@ -26,11 +26,13 @@ export default function Footer() {
     <Box className={styles.footer}>
       <Box className={styles.footerText}>Contact Me:</Box>
 
-      {SocialMedia.map(({ url, icon }) => (
-        <IconButton key={url} href={url} color="inherit" className={styles.footerIcons}>
-          {icon}
-        </IconButton>
-      ))}
+      <Box className={styles.icons}>
+        {SocialMedia.map(({ url, icon }) => (
+          <IconButton key={url} href={url} color="inherit" className={styles.footerIcons}>
+            {icon}
+          </IconButton>
+        ))}
+      </Box>
   </Box>
   );
 }

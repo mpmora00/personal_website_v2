@@ -2,9 +2,11 @@ import { useState } from 'react';
 import { Box, Button, styled, MenuItem, Tooltip } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import { TooltipProps, tooltipClasses } from '@mui/material/Tooltip';
-import { PageTab } from '@/utils/Routing.tsx'
+import { PageTab } from '@/information/Routing.tsx'
 import styles from './Header.module.scss';
 import classNames from 'classnames';
+import resumePDF from '@/assets/Resume.pdf';
+
 
 const projectTabs = ['Code Samples', 'Digital Design', 'Animations', 'Artworks'];
 
@@ -43,7 +45,7 @@ export default function Header({ page } : { page: PageTab }) {
   return (
     <Box className={styles.headerContainer}>
       <Box className={styles.header}>Maria Mora</Box>
-      <Box className={styles.headerButton}>
+      <Box className={styles.headerButtons}>
         <Button 
           className={getClassName(page, PageTab.home)}
           onClick={() => { navigate('/') }}
@@ -82,8 +84,7 @@ export default function Header({ page } : { page: PageTab }) {
           About
         </Button>
         <Button 
-          className={getClassName(page, PageTab.resume)}
-          onClick={() => { navigate('/resume') }}
+          href={resumePDF}
         >
           Resume
         </Button>

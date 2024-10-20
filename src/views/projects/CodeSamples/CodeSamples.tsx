@@ -1,6 +1,6 @@
 import Grid from '@mui/material/Grid2';
 import { Box } from '@mui/material';
-import { CodeProjectsList } from '@/utils/CodeProjectsList.ts';
+import { CodeProjectsList } from '@/information/CodeProjectsList.ts';
 import styles from './CodeSamples.module.scss';
 import DetailsContainer from './DetailsContainer.tsx';
 import ProjectCard from './ProjectCard.tsx';
@@ -10,7 +10,7 @@ export default function CodeSamplesPage() {
     <Box>
       <Grid container spacing={5} className={styles.codeSamplesGrid}>
         {CodeProjectsList.map((project ) => (
-          <Grid size={4} key={project.title}>
+          <Grid size={{ xs: 12, sm: 6, md: 6, lg: 4 }} key={project.title}>
             <DetailsContainer title={project.title} description={project.longDescription}>
               {(handleOpen) => (
                 <ProjectCard project={project} handleOpen={handleOpen} />
