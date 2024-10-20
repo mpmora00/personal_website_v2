@@ -1,9 +1,0 @@
-export { default as digitalArt1 } from './digitalArt.png';
-export { default as digitalArt2 } from './digitalArt2.png';
-export { default as digitalArt3 } from './digitalArt3.png';
-export { default as digitalArt4 } from './digitalArt4.png';
-export { default as figma1 } from './figma1.png';
-export { default as figma2 } from './figma2.png';
-export { default as figma3 } from './figma3.jpg';
-export { default as figma4 } from './figma4.jpg';
-export { default as figma5 } from './figma5.png';
