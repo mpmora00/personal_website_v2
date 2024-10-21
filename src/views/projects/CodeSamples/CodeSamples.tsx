@@ -2,8 +2,8 @@ import Grid from '@mui/material/Grid2';
 import { Box } from '@mui/material';
 import { CodeProjectsList } from '@/information/CodeProjectsList.ts';
 import styles from './CodeSamples.module.scss';
-import DetailsContainer from './DetailsContainer.tsx';
-import ProjectCard from './ProjectCard.tsx';
+import { DetailsContainer } from './DetailsContainer.tsx';
+import { ProjectCard } from './ProjectCard.tsx';
 
 export default function CodeSamplesPage() {
   return (

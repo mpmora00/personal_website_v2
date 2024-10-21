@@ -10,7 +10,7 @@ interface DetailsContainerProps {
     description: string;
 }
 
-export default function DetailsContainer({ children, title, description }: DetailsContainerProps) {
+export function DetailsContainer({ children, title, description }: DetailsContainerProps) {
     const [open, setOpen] = useState(false);
 
     const handleClose = useCallback(() => setOpen(false), []);

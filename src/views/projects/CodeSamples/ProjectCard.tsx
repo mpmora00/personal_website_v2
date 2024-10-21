@@ -4,7 +4,7 @@ import styles from './ProjectCard.module.scss';
 import { Project } from '@/information/CodeProjectsList';
 import StyledTitle from '@/components/common/StyledTitle';
 
-export default function ProjectCard({ project, handleOpen }: {
+export function ProjectCard({ project, handleOpen }: {
     project: Project;
     handleOpen: () => void;
 }) {
