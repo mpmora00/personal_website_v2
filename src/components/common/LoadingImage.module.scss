@@ -1,0 +1,17 @@
+.blurredImg {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    border-radius: 8px;
+    
+    .imageContainer {
+        opacity: 0;
+        transition: opacity 250ms ease-in-out;
+    }
+}
+
+.blurredImg.loaded {
+    .imageContainer {
+        opacity: 1;
+    }
+}

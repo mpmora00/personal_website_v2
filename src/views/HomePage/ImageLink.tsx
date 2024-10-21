@@ -7,12 +7,13 @@ import StyledTitle from '@/components/common/StyledTitle';
 
 interface ImageLinkProps {
     href: string;
+    imgRef: React.RefObject<HTMLImageElement>;
     src: string;
     title: string;
     description: string;
 }
 
-export function ImageLink({ href, src, title, description }: ImageLinkProps) {
+export function ImageLink({ href, imgRef, src, title, description }: ImageLinkProps) {
     const [hovered, setHovered] = useState(false);
     const navigate = useNavigate();
 
@@ -28,7 +29,8 @@ export function ImageLink({ href, src, title, description }: ImageLinkProps) {
             onClick={handleClick}
         >
             <img
-                className={classNames(styles.image, { [styles.hovered]: hovered })}
+                className={styles.image}
+                ref={imgRef}
                 src={src}
                 alt={title}
                 loading="lazy"

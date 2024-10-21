@@ -5,6 +5,7 @@ import { Artwork } from '@/information/ArtworkList';
 import StyledTitle from '@/components/common/StyledTitle';
 import styles from './ArtworkItem.module.scss';
 import classNames from 'classnames';
+import LoadingImage from '@/components/common/LoadingImage';
 
 interface ArtworkItemProps {
     artwork: Artwork;
@@ -22,25 +23,32 @@ export default function ArtworkItem({ artwork, title, description }: ArtworkItem
     
     return (
         <Box className={styles.imageContainer}>
-            <img
-                src={artwork.src}
-                alt={artwork.title}
-                loading="lazy"
-                onClick={handleOpen}
-                className={styles.image}
-            />
+            <LoadingImage src={artwork.src}>
+                {(imgRef) => (<img
+                    src={artwork.src}
+                    ref={imgRef}
+                    alt={artwork.title}
+                    loading="lazy"
+                    onClick={handleOpen}
+                    className={styles.image}
+                />)}
+            </LoadingImage>
+
             <Dialog 
                 open={open} 
                 onClose={handleClose} 
                 PaperProps={{className: styles.dialog}}
             >
                 <Box className={styles.dialogContainer}>
-                    <img
-                        src={artwork.src}
-                        alt={artwork.title}
-                        loading="lazy"
-                        className={styles.dialogImage}
-                    />
+                    <LoadingImage src={artwork.src}>
+                        {(imgRef) => (<img
+                            src={artwork.src}
+                            ref={imgRef}
+                            alt={artwork.title}
+                            loading="lazy"
+                            className={styles.dialogImage}
+                        />)}
+                    </LoadingImage>
                     <Box className={classNames(styles.imageDescription, {
                         [styles.imageDescriptionShow]: descriptionOpen
                     })}>

@@ -10,6 +10,7 @@
     --primary-contrast-text: #FFFFFF;
     --secondary-main: #ff7878;
     --secondary-dark: #6E5959;
+    --darken: rgba(16, 16, 16, 0.6);
 
     --font-family-title: 'Bebas Neue', Impact;
 }

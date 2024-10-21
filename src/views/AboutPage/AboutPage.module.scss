@@ -34,7 +34,10 @@
 
     .headshot {
         width: 100%;
-        border-radius: 5px;
+        border-radius: 8px;
+    }
+
+    .headshotContainer {
         transition: transform 0.3s ease;
     }
 
@@ -54,7 +57,7 @@
         &::before {
             transform: translate(20px, 20px);
         }
-        .headshot {
+        .headshotContainer {
             transform: translate(-5px, -5px);
         }
     }

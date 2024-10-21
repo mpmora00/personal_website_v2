@@ -6,6 +6,7 @@ import profileImage from '@/assets/images/me.png';
 import StyledLink from '@/components/common/StyledLink.tsx';
 import StyledTitle from '@/components/common/StyledTitle.tsx';
 import styles from './AboutPage.module.scss';
+import LoadingImage from '@/components/common/LoadingImage.tsx';
 
 const introductionText = "Hello! My name is Maria and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try to build a website for my mother's company. I graduated Summa Cum Laude from Dartmouth College in 2022 with a major in Computer Science Modified with Digital Arts and a minor in Human - Centered Design."
 const introductionText2 = "Outside the world of tech, I’m originally from Heredia, Costa Rica and you can find me skiing every week during the winter, going to camps with CISV around the world, volunteering teaching English and Spanish, or backing chocolate chip cookies."
@@ -31,12 +32,15 @@ export default function AboutPage() {
             <StyledBulletPoints items={codingLanguages} className={styles.codingLanguages} />
           </Grid>
           <Grid size={{ xs: 6, sm: 6, md: 4, lg: 3 }} key={"Image"} className={styles.imageWrapper}>
-            <img
-              className={styles.headshot}
-              src={profileImage}
-              alt="Headshot"
-              loading="lazy"
-            />
+            <LoadingImage src={profileImage} className={styles.headshotContainer}>
+              {(imgRef) => (<img
+                src={profileImage}
+                ref={imgRef}
+                className={styles.headshot}
+                alt="Headshot"
+                loading="lazy"
+              />)}
+            </LoadingImage>
           </Grid>
         <JobHistoryPanel />
       </Grid>

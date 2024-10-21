@@ -5,6 +5,7 @@ import StyledBulletPoints from "@/components/common/StyledBulletPoints";
 import { DigitalProjectList } from '@/information/DigitalDesignProjects';
 import ReactPlayer from 'react-player';
 import StyledTitle from "@/components/common/StyledTitle";
+import LoadingImage from "@/components/common/LoadingImage";
 
 export default function DigitalDesignPage() {
   return (
@@ -34,14 +35,17 @@ export default function DigitalDesignPage() {
                         },
                       },
                     }}
-                  />
-                  : <img
-                    src={src}
-                    alt={project.title}
-                    height="100%"
-                    width="100%"
-                    loading="lazy"
-                  />
+                  /> : (
+                    <LoadingImage src={src}>
+                      {(imgRef) => (<img
+                        src={src}
+                        ref={imgRef}
+                        alt={project.title}
+                        className={styles.images}
+                        loading="lazy"
+                      />)}
+                    </LoadingImage>
+                  )
                 }
               </Grid>
             ))}
