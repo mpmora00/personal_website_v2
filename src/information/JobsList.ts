@@ -27,7 +27,8 @@ export const JobsInformation: {
       url: 'https://iterative.health/',
       time: 'Mar 2024 - Present',
       description: [
-        "Transitioned to a new role building an in-house annotations system for high-quality labeling of colonoscopy videos."
+        "Building an in-house platform with two main functions: labeling colonoscopy videos and automating the collection and analysis of patient records.",
+        "Automating the process of gathering and analyzing patient records to speed up the creation of Clinical Study Reports to identify patients who are more likely to qualify for trials, which will help increase the number of participants."
       ]
     },
   ],
