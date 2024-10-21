@@ -1,5 +1,8 @@
 .dialog {
-    border-radius: 8px;
+    &:global(.MuiPaper-root) {
+        max-width: none;
+        border-radius: 8px;
+    }
 }
 
 .imageContainer{
@@ -11,10 +14,19 @@
 }
 
 .dialogContainer {
+    overflow: hidden;
+
     .dialogImage {
         max-height: 80vh;
-        max-width: 60vw;
+        max-width: 80vw;
         display: block;
+    }
+
+    @media (max-width: 600px) {
+        .dialogImage {
+            max-height: 100vh;
+            max-width: 90vw;
+        }
     }
 
     .imageDescription {
@@ -25,12 +37,12 @@
         bottom: 0;
         background-color: rgba(0, 0, 0, 0.5);
         color: var(--primary-contrast-text);
-        opacity: 0;
+        opacity: 1;
         transition: opacity 0.3s ease-in-out;
     }
 
     &:hover .imageDescription {
-        opacity: 1;  // Show the description on hover
+        opacity: 0;  // Hide the description on hover
     }
 
     .title {

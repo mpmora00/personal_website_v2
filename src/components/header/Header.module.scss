@@ -13,7 +13,6 @@
     flex-wrap: wrap;
     justify-content: center;
 
-
     :global(.MuiButton-root) {
         flex: 0 1 20%;
         height: 50px;
@@ -36,18 +35,27 @@
             background-color: var(--background-light);
             color: var(--primary-contrast-text)
         }
+    }
+}
 
-        @media (max-width: 400px) {
-            flex: 0 1 40%;
-        }
+:global(.MuiPaper-root.MuiPopover-paper) {
+    border-radius: 8px;
+    background-color: transparent;
+    margin-top: 8px;
+}
+
+.menuContainer {
+    :global(.MuiMenu-list) {
+        padding: 0;
     }
 }
 
 .menuItem {
-    :global(.MuiMenuItem-root) {
+    &:global(.MuiMenuItem-root) {
         background-color: var(--background-light);
         justify-content: center;
         font-family: var(--font-family-title);
+        color: var(--primary-contrast-text);
         font-size: 25px;
 
         &:hover {
