@@ -23,7 +23,6 @@ export default function Header({ page } : { page: PageTab }) {
   const getClassName = (currentPage: string, targetPage: string, dropdown: boolean | null = null): string => {
     return classNames({
       [styles.selectedTab]: currentPage === targetPage || (dropdown !== null && dropdown),
-      [styles.projectsSelected]: targetPage == PageTab.projects && open,
     });
   };
 
