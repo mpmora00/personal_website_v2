@@ -9,7 +9,7 @@ import styles from './AboutPage.module.scss';
 import LoadingImage from '@/components/common/LoadingImage.tsx';
 
 const introductionText = "Hello! My name is Maria and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try to build a website for my mother's company. I graduated Summa Cum Laude from Dartmouth College in 2022 with a major in Computer Science Modified with Digital Arts and a minor in Human - Centered Design."
-const introductionText2 = "Outside the world of tech, I’m originally from Heredia, Costa Rica and you can find me skiing every week during the winter, talking my dog on long walks, volunteering teaching English and Spanish, or backing chocolate chip cookies."
+const introductionText2 = "Outside the world of tech, I’m originally from Heredia, Costa Rica and you can find me skiing every week during the winter, talking my dog on long walks, volunteering teaching English and Spanish, or baking chocolate chip cookies."
 const codingLanguages = ['Java', 'Python', 'JavaScript', 'HTLM', 'SQL', 'React', 'GraphQL', 'Terraform', 'CSS']
 
 export default function AboutPage() {
