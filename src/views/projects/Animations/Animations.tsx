@@ -10,7 +10,7 @@ export default function AnimationsPage() {
     <Box className={styles.animationsContainer}>
       <StyledTitle text={"Animations"}/>
       <Box className={styles.descriptionText}>
-        {"Various animations, characters, and settings created over the years for various purposes mostly utilizing Autodesk Maya 2018."}
+        {"Various animations, characters, and settings created over the years for academic purposes mostly utilizing Autodesk Maya 2018."}
       </Box>
 
       <Grid container spacing={5}>

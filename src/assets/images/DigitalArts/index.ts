@@ -7,3 +7,4 @@ export { default as figma2 } from './figma2.png';
 export { default as figma3 } from './figma3.jpg';
 export { default as figma4 } from './figma4.jpg';
 export { default as figma5 } from './figma5.png';
+export { default as lostInTime1 } from './lostInTime1.png'

@@ -4,6 +4,7 @@ import styles from './ArtworkPage.module.scss';
 import DetailsContainer from "./ArtworkItem.tsx";
 import StyledTitle from "@/components/common/StyledTitle.tsx";
 import { useMediaQuery } from '@mui/material';
+import StyledLink from "@/components/common/StyledLink.tsx";
 
 export default function ArtworkPage() {
   // Define the number of columns based on screen size
@@ -17,9 +18,12 @@ export default function ArtworkPage() {
     <Box className={styles.artworksContainer}>
       <StyledTitle text={"Artworks"} />
       <Box className={styles.descriptionText}>
-        {"A series of various original artworks including paintings, sculptures, and drawings, created over the years. I've received drawing and paintings lessons since the age of 3 allowing me to have a large artwork collection. I've only shown the ones I'm most proud but, fortunately, there are more to see."}
+        {"A series of various original artworks including paintings, sculptures, and drawings, created for personal and academic reasons over the years. I've received drawing and paintings lessons since the age of 3 allowing me to have a large artwork collection. I've only shown the ones I'm most proud but, fortunately, there are more to see."}
       </Box>
-  
+      <Box className={styles.porfolioLink}>
+        <StyledLink text={"Process porfolio created for some pieces"} href={"https://drive.google.com/file/d/1fAF5vEcXiwylg1xxMbLT10rJcmytJj0r/view?usp=sharing"} />
+      </Box>
+      
       <ImageList variant="masonry" cols={columns} gap={20}>
         {ArtworkList.map((item) => (
           <ImageListItem key={item.src}>

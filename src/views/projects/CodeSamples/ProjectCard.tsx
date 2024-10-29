@@ -12,7 +12,7 @@ export function ProjectCard({ project, handleOpen }: {
         <Card className={styles.projectCard}>
             <CardContent className={styles.cardContent}>
                 <StyledTitle text={project.title} classname={styles.title} />
-                {project.shortDescription}
+                <Box className={styles.shortDescription}>{project.shortDescription}</Box>
                 <Box className={styles.codingLanguages}>{project.language}</Box>
             </CardContent>
 

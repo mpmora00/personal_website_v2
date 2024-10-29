@@ -6,8 +6,10 @@ import { DigitalProjectList } from '@/information/DigitalDesignProjects';
 import ReactPlayer from 'react-player';
 import StyledTitle from "@/components/common/StyledTitle";
 import LoadingImage from "@/components/common/LoadingImage";
+import StyledLink from "@/components/common/StyledLink";
 
 export default function DigitalDesignPage() {
+  console.log(DigitalProjectList);
   return (
     <Box className={styles.digitalDesignContainer}>
       {DigitalProjectList.map((project) => (
@@ -15,6 +17,16 @@ export default function DigitalDesignPage() {
           <StyledTitle text={project.title} />
           <Box className={styles.descriptionText}>{project.description}</Box>
           <StyledBulletPoints items={project.details} className={styles.descriptionBullet} />
+          <Box className={styles.digitalDesignLinks}>
+            {project.links && project.links.map((linkObj, index) => {
+                const [linkName, link] = Object.entries(linkObj)[0]; // Extract key-value pair
+
+                return (
+                  <StyledLink key={index} text={linkName} href={link} />
+                );
+              })
+            }
+          </Box>
 
           <Grid container spacing={2}>
             {project.src.map((src) => (
