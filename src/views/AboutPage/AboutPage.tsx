@@ -9,7 +9,8 @@ import styles from './AboutPage.module.scss';
 import LoadingImage from '@/components/common/LoadingImage.tsx';
 
 const introductionText = "Hello! My name is Maria and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try to build a website for my mother's company. I graduated Summa Cum Laude from Dartmouth College in 2022 with a major in Computer Science Modified with Digital Arts and a minor in Human - Centered Design."
-const introductionText2 = "Outside the world of tech, I’m originally from Heredia, Costa Rica and you can find me skiing every week during the winter, talking my dog on long walks, volunteering teaching English and Spanish, or baking chocolate chip cookies."
+const introductionText2 = "I’m now pursuing my MBA at Wharton, where I’m deepening my skills in product management, strategy, and leadership, with the goal of building products that are not only technically strong but also delight users and drive meaningful outcomes."
+const introductionText3 = "Outside the world of tech, I’m originally from Heredia, Costa Rica and you can find me skiing every week during the winter, talking my dog on long walks, volunteering teaching English and Spanish, or baking chocolate chip cookies."
 const codingLanguages = ['Java', 'Python', 'JavaScript', 'HTLM', 'SQL', 'React', 'GraphQL', 'Terraform', 'CSS']
 
 export default function AboutPage() {
@@ -20,7 +21,7 @@ export default function AboutPage() {
           <Grid size={{ xs: 12, sm: 12, md: 7, lg: 8 }} key={"Text"} className={styles.descriptionText}>
             <Box>{introductionText}</Box>
             <Box>
-                {"Fast-forward to today, and I’ve had the privilege of working at "}
+                {"I’ve had the privilege of working at "}
                 <StyledLink href="https://iterative.health/" text="a startup"/>
                 {', '}
                 <StyledLink href="https://www.meta.com/" text="a huge corporation"/>
@@ -28,6 +29,7 @@ export default function AboutPage() {
                 <StyledLink href="https://dali.dartmouth.edu/" text="a student-led design studio"/>.
             </Box>
             <Box>{introductionText2}</Box>
+            <Box>{introductionText3}</Box>
             <Box>{"Here are a few technologies I’ve been working with recently:"}</Box>
             <StyledBulletPoints items={codingLanguages} className={styles.codingLanguages} />
           </Grid>
